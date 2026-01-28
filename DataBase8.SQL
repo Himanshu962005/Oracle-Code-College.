@@ -3,9 +3,9 @@
 -- Create New Schema for the System.
 CREATE USER Covid_User IDENTIFIED BY Covid123;
 -- Grant Necessary Privileges.
-GRANT CONNECT, RESOURCE, CREATE SESSION, CREATE TABLE TO covid_user;
+GRANT CONNECT, RESOURCE, CREATE SESSION, CREATE TABLE TO Covid_User;
 -- Switch to Schema.
-ALTER SESSION SET CURRENT_SCHEMA = covid_user;
+ALTER SESSION SET CURRENT_SCHEMA = Covid_User;
 -- Step 2: Create Tables.
 /* We’ll Make Four Main Tables:
 1. Citizens → People Getting Vaccinated.
