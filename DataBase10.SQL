@@ -28,17 +28,17 @@ SELECT * FROM Sales;
 SELECT employee_name, SUM(quantity) AS total_quantity
 FROM Sales
 GROUP BY employee_name;
--- Groups rows by employee_name and calculates total quantity sold by each.
+-- Groups Rows by Employee_Name and Calculates Total Quantity Sold by Each.
 -- Example 2: Total Sales Value by Product.
 SELECT product_name, SUM(quantity * price) AS total_sales
 FROM Sales
 GROUP BY product_name;
--- Quantity * Price gives Total Sales for each Product. The Group By Combines All Rows having the Same Product_Name.
+-- Quantity * Price Gives Total Sales for Each Product. The Group By Combines All Rows having the Same Product_Name.
 -- Example 3: Total Sales by Each Employee for Each Product.
 SELECT employee_name, product_name, SUM(quantity * price) AS total_sales
 FROM Sales
 GROUP BY employee_name, product_name;
--- Grouped by both employee and product → shows which employee sold which product and total sales value.
+-- Grouped by Both Employee and Product → Shows Which Employee Sold Which Product and Total Sales Value.
 -- Step 5: Practice Order By Clause.
 -- Example 1: Sort Sales by Date (Ascending).
 SELECT * FROM Sales
