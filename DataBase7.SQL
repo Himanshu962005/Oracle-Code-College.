@@ -3,7 +3,7 @@
 -- Create a New User (Schema) for Hotel Management System.
 CREATE USER Hotel_User IDENTIFIED BY Password123;
 -- Grant Necessary Privileges.
-GRANT CONNECT, RESOURCE, CREATE SESSION, CREATE TABLE, CREATE SEQUENCE TO hotel_user;
+GRANT CONNECT, RESOURCE, CREATE SESSION, CREATE TABLE, CREATE SEQUENCE TO Hotel_User;
 -- Switch to the User.
 ALTER SESSION SET CURRENT_SCHEMA = Hotel_User;
 -- Step 2: Create Tables.
@@ -84,4 +84,5 @@ INSERT INTO Services VALUES (1, 'Room Service', 500.00);
 INSERT INTO Services VALUES (2, 'Laundry', 200.00);
 INSERT INTO Services VALUES (3, 'Spa', 1200.00);
 -- Display Services Records.
+
 SELECT * FROM Services;
