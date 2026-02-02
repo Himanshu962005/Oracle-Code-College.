@@ -84,5 +84,4 @@ INSERT INTO Services VALUES (1, 'Room Service', 500.00);
 INSERT INTO Services VALUES (2, 'Laundry', 200.00);
 INSERT INTO Services VALUES (3, 'Spa', 1200.00);
 -- Display Services Records.
-
 SELECT * FROM Services;
