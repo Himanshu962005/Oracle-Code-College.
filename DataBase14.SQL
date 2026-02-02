@@ -20,7 +20,7 @@ SELECT * FROM Emp_Date_Test;
 -- Step 4: Display Dates in Two Different Formats.
 -- Format 1: DD-Mon-YYYY.
 SELECT emp_name, TO_CHAR(join_date, 'DD-Mon-YYYY') AS "Joining Date" FROM Emp_Date_Test;
--- Format 2: Day, DD Month YYYY
+-- Format 2: Day, DD Month YYYY.
 SELECT emp_name, TO_CHAR(join_date, 'Day, DD Month YYYY') AS "Join Date Full" FROM Emp_Date_Test;
 -- Step 5: Current Date.
 SELECT SYSDATE AS "Current System Date" FROM DUAL;
