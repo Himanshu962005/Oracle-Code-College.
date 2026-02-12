@@ -7,7 +7,7 @@ ename VARCHAR2(50),
 deptid NUMBER,
 salary NUMBER(10,2)
 );
--- Table 2: DEPARTMENT. 
+-- Table 2: DEPARTMENT.
 CREATE TABLE Department (
 deptid NUMBER PRIMARY KEY,
 deptname VARCHAR2(50),
@@ -46,3 +46,4 @@ FULL OUTER JOIN department d ON e.deptid = d.deptid;
 SELECT e.ename, d.deptname
 FROM employee e
 CROSS JOIN department d;
+
