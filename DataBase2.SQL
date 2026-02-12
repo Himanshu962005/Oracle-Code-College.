@@ -1,4 +1,4 @@
-/* Design a Salary table Oracle/SQL Server with one Primary Key and Foreign Key(Employee Table) having following fields : Month, Working Days, Deptid, Gross, Incentive, Deduction and Net Salary. */
+/* Design a Salary Table Oracle/SQL Server with One Primary Key and Foreign Key(Employee Table) Having Following Fields : Month, Working Days, Deptid, Gross, Incentive, Deduction and Net Salary. */
 -- Create Employee Table(Parent Table).
 CREATE TABLE Employee (
 Eid NUMBER PRIMARY KEY,
@@ -29,22 +29,22 @@ deduction NUMBER(10,2),
 net_salary NUMBER(10,2),
 CONSTRAINT fk_emp FOREIGN KEY (eid) REFERENCES Employee(eid)
 );
--- (A) Insert five records in the above created table.
+-- (A) Insert Five Records in the Above Created Table.
 INSERT INTO Salary VALUES (1, 1, 'January', 26, 'HR', 50000, 5000, 2000, 53000);
 INSERT INTO Salary VALUES (2, 2, 'January', 25, 'Engineer', 40000, 3000, 1000, 42000);
 INSERT INTO Salary VALUES (3, 3, 'January', 26, 'Developer', 45000, 4000, 1500, 47500);
 INSERT INTO Salary VALUES (4, 4, 'January', 24, 'Engineer', 42000, 2000, 1000, 43000);
 INSERT INTO Salary VALUES (5, 5, 'January', 26, 'HR', 35000, 2500, 800, 36700);
--- (B) Display all five records.
+-- (B) Display All Five Records.
 SELECT * FROM Employee;
 SELECT * FROM Salary;
--- (C) Use foreign key relations and display records.
+-- (C) Use Foreign Key Relations and Display Records.
 SELECT e.eid, e.ename, e.edesignation, s.month, s.gross, s.net_salary
 FROM Employee e
 JOIN Salary s ON e.eid = s.eid;
--- (D) Update the second record of field deptid as 'Sales'.
+-- (D) Update the Second Record of Field Deptid as 'Sales'.
 UPDATE Salary
 SET deptid = 'Sales'
 WHERE sid = 2;
--- (E) Add one new field in the table.
+-- (E) Add One New Field in the Table.
 ALTER TABLE Salary ADD bonus NUMBER(10,2);
