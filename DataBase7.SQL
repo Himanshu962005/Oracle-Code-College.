@@ -1,4 +1,4 @@
-/* Create a new Database in Oracle/SQL Server having at least Five Tables for the Hotel Management System. */
+/* Create a New Database in Oracle/SQL Server Having at Least Five Tables for the Hotel Management System. */
 -- Step 1: Create the Database (Schema).
 -- Create a New User (Schema) for Hotel Management System.
 CREATE USER Hotel_User IDENTIFIED BY Password123;
@@ -8,7 +8,7 @@ GRANT CONNECT, RESOURCE, CREATE SESSION, CREATE TABLE, CREATE SEQUENCE TO Hotel_
 ALTER SESSION SET CURRENT_SCHEMA = Hotel_User;
 -- Step 2: Create Tables.
 -- Table 1: CUSTOMERS.
--- Stores Information about Hotel Guests.
+-- Stores Information About Hotel Guests.
 CREATE TABLE Customers (
 customer_id NUMBER PRIMARY KEY,
 first_name VARCHAR2(50) NOT NULL,
@@ -25,7 +25,7 @@ INSERT INTO Customers VALUES (3, 'Prashant', 'Verma', 'rajk@gmail.com', '9988776
 -- Step 4: Display Customers Records.
 SELECT * FROM Customers;
 -- Table 2: ROOMS.
--- Stores Details about Rooms in the Hotel.
+-- Stores Details About Rooms in the Hotel.
 CREATE TABLE Rooms (
 room_id NUMBER PRIMARY KEY,
 room_number VARCHAR2(10) NOT NULL UNIQUE,
