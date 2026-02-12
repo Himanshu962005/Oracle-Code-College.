@@ -1,4 +1,4 @@
-/* Create a new table in Oracle/SQL Server and practice for Join Operation. */
+/* Create a New Table in Oracle/SQL Server and Practice for Join Operation. */
 -- Step 1: Create Tables.
 -- Table 1: EMPLOYEE.
 CREATE TABLE Employee (
