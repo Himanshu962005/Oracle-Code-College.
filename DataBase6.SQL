@@ -1,4 +1,4 @@
-/* Create a new User in Oracle/SQL Server and practice for the Commit and Rollback Command. */
+/* Create a New User in Oracle/SQL Server and Practice for the Commit and Rollback Command. */
 -- Step 1: Create a New User.
 Create user Himanshu identified by Valtryek962005;
 -- Grant Necessary Privileges.
