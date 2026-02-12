@@ -1,4 +1,4 @@
-/* Create a new Database in Oracle/SQL Server having at least Five Tables for the Library Management System. */
+/* Create a New Database in Oracle/SQL Server Having at Least Five Tables for the Library Management System. */
 -- Step 1: Create Schema (User).
 -- Create User/Schema for Library Management System.
 CREATE USER Library_User IDENTIFIED BY Lib123;
