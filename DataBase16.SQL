@@ -1,10 +1,10 @@
-/* Create a new Table in Oracle/SQL Server and practice for Having Clauses with Sub Queries. */
+/* Create a New Table in Oracle/SQL Server and Practice for Having Clauses with Sub Queries. */
 -- Step 1: Create Table.
 CREATE TABLE Sales_Data (
-sales_id     NUMBER PRIMARY KEY,
-salesman     VARCHAR2(50),
-region       VARCHAR2(30),
-total_sales  NUMBER(10,2)
+sales_id NUMBER PRIMARY KEY,
+salesman VARCHAR2(50),
+region VARCHAR2(30),
+total_sales NUMBER(10,2)
 );
 -- Step 2: Insert Sample Data.
 INSERT INTO Sales_Data VALUES (1, 'Himanshu Karwa', 'North', 50000);
@@ -21,6 +21,6 @@ GROUP BY region
 HAVING AVG(total_sales) >
        (SELECT AVG(total_sales) FROM Sales_Data);
 /* Explanation.
-The Inner Query (SubQuery): (SELECT AVG(total_sales) FROM Sales_Data).
+The Inner Query (SubQuery): (SELECT AVG(Total_Sales) FROM Sales_Data).
 Calculates the Overall Average Sales Across All Regions. */
--- The Outer Query: Groups Data by Region and Only Shows Regions where the Average Sales per Region is Higher than the Overall Average.
+-- The Outer Query: Groups Data by Region and Only Shows Regions Where the Average Sales Per Region is Higher Than the Overall Average.
