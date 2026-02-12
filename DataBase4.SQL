@@ -21,5 +21,5 @@ JOIN
     salary s
 ON
     e.eid = s.eid;
--- Now run this to see the output.
+-- Now Run this to See the Output.
 SELECT * FROM Employee_Salary_View;
