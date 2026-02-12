@@ -1,4 +1,4 @@
-/* Create a new Database in Oracle/SQL Server having at least Four Tables for Covid Vaccination Management System. */
+/* Create a New Database in Oracle/SQL Server Having at Least Four Tables for Covid Vaccination Management System. */
 -- Step 1: Create Schema (User).
 -- Create New Schema for the System.
 CREATE USER Covid_User IDENTIFIED BY Covid123;
