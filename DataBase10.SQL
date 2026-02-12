@@ -1,4 +1,4 @@
-/* Create a new Table in Oracle/SQL Server and practice for Group By and Order By Clause. */
+/* Create a New Table in Oracle/SQL Server and Practice for Group By and Order By Clause. */
 -- Step 1: Create a Table — SALES.
 -- We’ll Create a Sales Table to Store Sales Data for Different Employees and Products.
 CREATE TABLE Sales (
@@ -33,7 +33,7 @@ GROUP BY employee_name;
 SELECT product_name, SUM(quantity * price) AS total_sales
 FROM Sales
 GROUP BY product_name;
--- Quantity * Price Gives Total Sales for Each Product. The Group By Combines All Rows having the Same Product_Name.
+-- Quantity * Price Gives Total Sales for Each Product. The Group By Combines All Rows Having the Same Product_Name.
 -- Example 3: Total Sales by Each Employee for Each Product.
 SELECT employee_name, product_name, SUM(quantity * price) AS total_sales
 FROM Sales
