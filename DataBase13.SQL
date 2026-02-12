@@ -1,11 +1,11 @@
-/* Create a new Table in Oracle/SQL Server and practice for Unique and Check Constraints. */
+/* Create a New Table in Oracle/SQL Server and Practice for Unique and Check Constraints. */
 -- Step 1: Create a New Table.
 -- Let’s Create a Table called EMPLOYEE_DETAILS.
 CREATE TABLE Employee_Details (
-emp_id     NUMBER PRIMARY KEY,
-emp_name   VARCHAR2(50) NOT NULL,
-email      VARCHAR2(100) UNIQUE,
-salary     NUMBER(10,2) CHECK (salary > 0),
+emp_id NUMBER PRIMARY KEY,
+emp_name VARCHAR2(50) NOT NULL,
+email VARCHAR2(100) UNIQUE,
+salary NUMBER(10,2) CHECK (salary > 0),
 department VARCHAR2(30) CHECK (department IN ('HR', 'IT', 'Finance', 'Sales'))
 );
 -- Step 2: Insert Sample Data.
