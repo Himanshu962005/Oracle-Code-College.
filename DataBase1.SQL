@@ -1,4 +1,4 @@
-/* Design an Employee Table in Oracle/SQL Server having Eid(Primary Key) Ename, Edesignation, Edoj, Edob, Eaddress, Salary, Econtact as Fields and Answer the following Question. */
+/* Design an Employee Table in Oracle/SQL Server Having Eid(Primary Key) Ename, Edesignation, Edoj, Edob, Eaddress, Salary, Econtact as Fields and Answer the Following Questions. */
 CREATE TABLE Employee (
 eid NUMBER PRIMARY KEY,
 ename VARCHAR2(50),
