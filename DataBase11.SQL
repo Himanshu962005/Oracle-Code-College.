@@ -1,4 +1,4 @@
-/* Create a new Table in Oracle/SQL Server and practice for Max(), Min(), Avg() and Count() Functions. */
+/* Create a New Table in Oracle/SQL Server and Practice for Max(), Min(), Avg() and Count() Functions. */
 -- Step 1: Create a New Table.
 CREATE TABLE Employee_Salary (
 emp_id NUMBER PRIMARY KEY,
