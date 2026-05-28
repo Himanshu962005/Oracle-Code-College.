@@ -4,7 +4,7 @@
 ![Enterprise Grade](https://img.shields.io/badge/Enterprise-Grade-1D9E75?style=flat)
 ![High Performance](https://img.shields.io/badge/High-Performance-BA7517?style=flat)
 ![Oracle License](https://img.shields.io/badge/License-Oracle-red?style=flat&logo=oracle&logoColor=white)
-https://img.shields.io/badge/License-BSD%202--Clause-9B59B6?style=flat
+![BSD 2-Clause](https://img.shields.io/badge/License-BSD%202--Clause-9B59B6?style=flat)
 
 > A powerful, enterprise-grade relational database management system (RDBMS) used for storing, managing, and processing large-scale data across industries worldwide.
 
