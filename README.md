@@ -51,8 +51,9 @@ sqlCREATE TABLE Students (
 INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
 
 SELECT * FROM Students WHERE name = 'Himanshu';
-MySQL
-sqlCREATE TABLE Students (
+```MySQL
+sql
+CREATE TABLE Students (
     id INT PRIMARY KEY,
     name VARCHAR(50),
     course VARCHAR(50)
