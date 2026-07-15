@@ -39,3 +39,25 @@ SELECT * FROM Students WHERE name = 'Himanshu';
 
 ## 🎯 Conclusion.
 Oracle Database and MySQL are two of the most trusted and widely adopted RDBMS technologies, essential for building reliable, structured, and scalable database systems used across enterprises and web applications worldwide.
+
+🧠 Example
+Oracle Database
+sqlCREATE TABLE Students (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(50),
+    course VARCHAR2(50)
+);
+
+INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
+
+SELECT * FROM Students WHERE name = 'Himanshu';
+MySQL
+sqlCREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    course VARCHAR(50)
+);
+
+INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
+
+SELECT * FROM Students WHERE name = 'Himanshu';
