@@ -15,7 +15,7 @@ Oracle Database and MySQL are two of the most widely used Relational Database Ma
 
 ## 🧠 Example.
 ```Oracle Database Code.
-Oracle
+Oracle.
 CREATE TABLE Students (
     id NUMBER PRIMARY KEY,
     name VARCHAR2(50),
@@ -26,7 +26,7 @@ SELECT * FROM Students WHERE name = 'Himanshu';
 ```
 
 ```MySQL Database Code.
-MySQL
+MySQL.
 CREATE TABLE Students (
     id INT PRIMARY KEY,
     name VARCHAR(50),
