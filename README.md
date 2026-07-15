@@ -1,64 +1,41 @@
 # Oracle-Code-College.
+Oracle Database and MySQL are two of the most widely used Relational Database Management Systems (RDBMS), used to store and manage structured data in the form of tables with rows and columns. Both use SQL (Structured Query Language) to define, query, and manipulate data, and enforce relationships between tables using keys.
 
-![Relational Database](https://img.shields.io/badge/Relational-Database-378ADD?style=flat)
-![Enterprise Grade](https://img.shields.io/badge/Enterprise-Grade-1D9E75?style=flat)
-![High Performance](https://img.shields.io/badge/High-Performance-BA7517?style=flat)
-![Oracle License](https://img.shields.io/badge/License-Oracle-red?style=flat&logo=oracle&logoColor=white)
-![BSD 2-Clause](https://img.shields.io/badge/License-BSD%202--Clause-9B59B6?style=flat)
+## ✨ Features.
+* Data stored in structured tables (rows and columns).
+* Supports relationships using Primary Keys and Foreign Keys.
+* Ensures data integrity through ACID properties.
+* Supports SQL for querying, joins, stored procedures, and transactions.
 
-> A powerful, enterprise-grade relational database management system (RDBMS) used for storing, managing, and processing large-scale data across industries worldwide.
+## ⚙️ Uses.
+* Store and manage structured business data.
+* Build backend databases for web and enterprise applications.
+* Perform complex queries, joins, and reporting.
+* Maintain data consistency across multiple tables.
 
----
-
-## ✨ Features
-
-- Industry-leading relational database with ACID compliance.
-- Advanced security features including data encryption and auditing.
-- High availability with Real Application Clusters (RAC).
-- Supports PL/SQL for stored procedures, triggers, and functions.
-- Built-in support for JSON, XML, spatial, and graph data.
-
----
-
-## ⚙️ Uses
-
-- Build enterprise-grade transactional and analytical systems.
-- Manage large-scale banking, finance, and healthcare data.
-- Create data warehouses and business intelligence platforms.
-- Power ERP and CRM systems like Oracle E-Business Suite.
-
----
-
-## 🧠 Example
-
-```sql
--- Hello World in Oracle SQL
-SELECT 'Hello, Himanshu!' AS greeting FROM dual;
-
--- Create a simple table
-CREATE TABLE students (
-    id     NUMBER PRIMARY KEY,
-    name   VARCHAR2(100),
-    grade  VARCHAR2(10)
+## 🧠 Example.
+```Oracle
+CREATE TABLE Students (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(50),
+    course VARCHAR2(50)
 );
-
--- Insert a record
-INSERT INTO students VALUES (1, 'Himanshu', 'A');
+INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
+SELECT * FROM Students WHERE name = 'Himanshu';
+MySQL
+sqlCREATE TABLE Students (
+    id INT PRIMARY KEY,
+    name VARCHAR(50),
+    course VARCHAR(50)
+);
+INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
+SELECT * FROM Students WHERE name = 'Himanshu';
 ```
 
----
+## 🛠️ Technologies.
+* Databases: Oracle Database, MySQL.
+* Query Language: SQL, PL/SQL (Oracle).
+* Tools: Oracle SQL Developer, MySQL Workbench, phpMyAdmin, SQL*Plus.
 
-## 🛠️ Technologies
-
-| Category   | Tools                                  |
-|------------|----------------------------------------|
-| Database   | Oracle Database 19c, 21c, 23c          |
-| Language   | SQL, PL/SQL                            |
-| Tools      | SQL*Plus, SQL Developer, TOAD          |
-| Cloud      | Oracle Autonomous Database, OCI        |
-
----
-
-## 🎯 Conclusion
-
-Oracle Database is the world's most trusted and widely used enterprise relational database. From financial institutions to government systems — Oracle powers the most critical data infrastructure on the planet. Mastering Oracle gives you expertise in data management, performance tuning, and enterprise architecture.
+## 🎯 Conclusion.
+Oracle Database and MySQL are two of the most trusted and widely adopted RDBMS technologies, essential for building reliable, structured, and scalable database systems used across enterprises and web applications worldwide.
