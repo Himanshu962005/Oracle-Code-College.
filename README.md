@@ -14,7 +14,8 @@ Oracle Database is a high-performance, enterprise-grade Relational Database Mana
 * Automate business logic using stored procedures and triggers.
 
 ## 🧠 Example.
-```SQL.
+```
+Oracle-SQL.
 CREATE TABLE Students (
     id NUMBER PRIMARY KEY,
     name VARCHAR2(50),
@@ -24,8 +25,9 @@ INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science
 SELECT * FROM Students WHERE name = 'Himanshu';
 ```
 
-```PL/SQL Example.
-sqlDECLARE
+```
+PL/SQL-Example.
+DECLARE
     v_name VARCHAR2(50) := 'Himanshu';
 BEGIN
     DBMS_OUTPUT.PUT_LINE('Hello ' || v_name);
