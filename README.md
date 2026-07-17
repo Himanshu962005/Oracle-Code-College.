@@ -1,21 +1,20 @@
 # Oracle-Code-College.
-Oracle Database and MySQL are two of the most widely used Relational Database Management Systems (RDBMS), used to store and manage structured data in the form of tables with rows and columns. Both use SQL (Structured Query Language) to define, query, and manipulate data, and enforce relationships between tables using keys.
+Oracle Database is a high-performance, enterprise-grade Relational Database Management System (RDBMS) developed by Oracle Corporation. It is used to store, manage, and retrieve large volumes of structured data, and uses SQL along with PL/SQL (Procedural Language/SQL) for advanced data processing and business logic.
 
 ## ✨ Features.
 * Data stored in structured tables (rows and columns).
 * Supports relationships using Primary Keys and Foreign Keys.
 * Ensures data integrity through ACID properties.
-* Supports SQL for querying, joins, stored procedures, and transactions.
+* Supports PL/SQL for stored procedures, functions, triggers, and packages.
 
 ## ⚙️ Uses.
-* Store and manage structured business data.
-* Build backend databases for web and enterprise applications.
+* Store and manage large-scale enterprise data.
+* Build backend databases for banking, finance, and business applications.
 * Perform complex queries, joins, and reporting.
-* Maintain data consistency across multiple tables.
+* Automate business logic using stored procedures and triggers.
 
 ## 🧠 Example.
-```Oracle Database Code.
-Oracle.
+```SQL.
 CREATE TABLE Students (
     id NUMBER PRIMARY KEY,
     name VARCHAR2(50),
@@ -25,21 +24,19 @@ INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science
 SELECT * FROM Students WHERE name = 'Himanshu';
 ```
 
-```MySQL Database Code.
-MySQL.
-CREATE TABLE Students (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    course VARCHAR(50)
-);
-INSERT INTO Students (id, name, course) VALUES (1, 'Himanshu', 'Computer Science');
-SELECT * FROM Students WHERE name = 'Himanshu';
+```PL/SQL Example.
+sqlDECLARE
+    v_name VARCHAR2(50) := 'Himanshu';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Hello ' || v_name);
+END;
+/
 ```
 
 ## 🛠️ Technologies.
-* Databases: Oracle Database, MySQL.
-* Query Language: SQL, PL/SQL (Oracle).
-* Tools: Oracle SQL Developer, MySQL Workbench, phpMyAdmin, SQL*Plus.
+* Database: Oracle Database (Oracle 19c, 21c, 23c).
+* Language: SQL, PL/SQL.
+* Tools: Oracle SQL Developer, SQL*Plus, Toad for Oracle.
 
 ## 🎯 Conclusion.
-Oracle Database and MySQL are two of the most trusted and widely adopted RDBMS technologies, essential for building reliable, structured, and scalable database systems used across enterprises and web applications worldwide.
+Oracle Database is one of the most powerful and widely used enterprise RDBMS technologies, essential for building secure, scalable, and high-performance database systems used by large organizations worldwide.
